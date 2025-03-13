@@ -56,7 +56,11 @@ async fn main() -> anyhow::Result<()> {
         bulk_data = std::fs::read_to_string(path)?;
         data_updated = std::fs::metadata(path)?.modified()?.into();
     } else {
-        let bulk_data_info = reqwest::get(BULK_DATA_API_URL)
+        let bulk_data_info = reqwest::Client::new()
+            .get(BULK_DATA_API_URL)
+            .header(reqwest::header::ACCEPT, "application/json")
+            .header(reqwest::header::USER_AGENT, "manabase (https://github.com/VoidStarKat/manabase)")
+            .send()
             .await?
             .json::<BulkDataInfo>()
             .await?;
