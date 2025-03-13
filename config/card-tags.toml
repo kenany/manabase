@@ -1810,7 +1810,7 @@
 "Rivendell" = ["Blue Mana", "Utility Land", "Scry", "Middle Earth Landmark"]
 "Riven Turnbull" = ["Dork", "Ramp", "Black Mana"]
 "River Delta" = ["Depletion Dual", "Dimir Mana", "Depletion Land"]
-"Riverglide Pathway // Lavaglide Pathway" = ["Blue Mana", "Red Mana"]
+"Riverglide Pathway // Lavaglide Pathway" = ["Modal", "Modal Dual", "Blue Mana", "Red Mana"]
 "River Herald Guide" = ["Dig"]
 "River Herald Scout" = ["Dig"]
 "River of Tears" = ["Futuresight Dual", "Dimir Mana"]
